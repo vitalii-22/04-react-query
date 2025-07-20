@@ -37,7 +37,6 @@ function App() {
   const handleValue = (title: string) => {
     setMovieTitle(title);
     setCurrentPage(1);
-    console.log(title);
   };
 
   const closeMovieModal = () => {

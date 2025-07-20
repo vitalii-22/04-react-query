@@ -20,6 +20,5 @@ export const fetchMovies = async (movieTitle: string, page: number) => {
       },
     }
   );
-  console.log(response.data);
   return response.data;
 };
