@@ -7,7 +7,10 @@ interface MoviesHttpResponse {
 
 const myToken = import.meta.env.VITE_TMDB_TOKEN;
 
-export const fetchMovies = async (movieTitle: string, page: number) => {
+export const fetchMovies = async (
+  movieTitle: string,
+  page: number
+): Promise<MoviesHttpResponse> => {
   const response = await axios.get<MoviesHttpResponse>(
     `https://api.themoviedb.org/3/search/movie?`,
     {
